@@ -42,7 +42,12 @@
             <div class="input-group input-group-newsletter">
               <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
               <div class="input-group-append">
-                <button class="btn btn-secondary" type="button">Notify Me!</button>
+                <form action="https://formspree.io/geoplan@geoprism.ca" method="POST">
+                  <input type="text" name="name">
+                  <input type="email" name="_replyto">
+              <!--    // <input type="submit" value="Send">v-->
+                  <button class="btn btn-secondary" type="submit" value="Send">Notify Me!</button>
+                </form> 
               </div>
             </div>
           </div>
