@@ -40,7 +40,7 @@
             <p class="mb-5">We're working hard to finish the development of this site. Our target launch date is
               <strong>January 2019</strong>! Sign up for updates using the form below!</p>
             <div class="input-group input-group-newsletter">
-                <form action="https://formspree.io/geoplan@geoprism.ca" method="POST">
+                <form name="mail_form" action="https://formspree.io/geoplan@geoprism.ca" onSubmit="validateForm" method="POST">
                   <input type="text" class="form-control" name="email" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
                   <button class="btn btn-secondary" type="submit" value="Send">Notify Me!</button>
                 </form> 
@@ -77,6 +77,16 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/coming-soon.min.js"></script>
+  <script>
+    function validateForm() {
+  var x = document.forms["mail_form"]["email"].value;
+  if (x == "") {
+    alert("Email field must be filled out");
+    return false;
+  }
+} 
+    
+  </script>
 
 </body>
 
