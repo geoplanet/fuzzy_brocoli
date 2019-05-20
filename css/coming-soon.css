@@ -29,6 +29,7 @@ body {
 h1 {
     font-family: 'Rock Salt', cursive; 
     font-size: 2em;
+    line-height : .8em;
 },
 h2,
 h3,
@@ -149,6 +150,9 @@ video {
   }
 }
 .mb-1 {
+  text-align: right;
+}
+.mb-2 {
   text-align: right;
 }
 .social-icons {
